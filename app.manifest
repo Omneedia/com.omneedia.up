@@ -1,0 +1,115 @@
+{
+    "namespace": "com.omneedia.up",
+    "git": "",
+    "title": "Up!",
+    "description": "Test your application in the real world",
+    "platform": "mobile",
+    "uid": "ByOBuGZMf",
+    "version": "0.0.1",
+    "build": "0",
+    "copyright": "Copyright (c) 2017 Omneedia",
+    "license": "BSD3",
+    "author": {
+        "name": "XXX",
+        "mail": "xxx@xxx.com",
+        "twitter": "@xxx",
+        "web": "",
+        "github": ""
+    },
+    "team": {
+        "debugger": [],
+        "tester": []
+    },
+    "langs": [
+        "en-US",
+        "fr-FR"
+    ],
+    "paths": {
+        "@omneedia": "/cdn",
+        "@cdnjs": "https://cdnjs.cloudflare.com/ajax/libs",
+        "Contents": "Contents/Application/app",
+        "Lib": "Contents/Application/app/libraries"
+    },
+    "frameworks": [
+        {
+            "name": "ONSENUI",
+            "version": "2.8.2",
+            "src": [
+                "@omneedia/ajax/libs/setImmediate/1.0.5/setImmediate.js",
+                "@cdnjs/onsen/{version}/js/onsenui.js"
+            ],
+            "res": [
+                "@cdnjs/onsen/{version}/css/onsenui.css",
+                "@cdnjs/onsen/{version}/css/onsen-css-components.css"
+            ],
+            "i18n": []
+        },
+        {
+            "name": "OMNEEDIA",
+            "version": "0.9.0",
+            "src": [
+                "@omneedia/ajax/libs/setImmediate/1.0.5/setImmediate.js",
+                "@omneedia/ajax/libs/socket.io/2.0.3/socket.io.js",
+                "@omneedia/omneedia/{version}/utils.modules.js",
+                "@omneedia/omneedia/{version}/app.js",
+                "@omneedia/omneedia/{version}/mobile.modules.js"
+            ],
+            "res": [
+                "@omneedia/ajax/libs/animate.css/3.5.2/animate.css",
+                "@omneedia/omneedia/{version}/res/mobile.css",
+                "Contents/Resources/mobile.css"
+            ],
+            "i18n": [
+                "@omneedia/omneedia/{version}/libs/Date/date-{lang}.js",
+                "@omneedia/omneedia/{version}/i18n/{lang}.json"
+            ]
+        }
+    ],
+    "auth": [],
+    "controllers": [
+        "CMain"
+    ],
+    "modules": [],
+    "plugins": [
+        "cordova-plugin-whitelist",
+        "cordova-plugin-statusbar",
+        "cordova-plugin-globalization",
+        "cordova-plugin-barcodescanner",
+        "cordova-universal-links-plugin",
+        "cordova-plugin-socialsharing",
+        "cordova-plugin-flashlight",
+        "cordova-plugin-file-transfer2",
+        "cordova-plugin-nativegeocoder",
+        "cordova-plugin-document-viewer",
+        "cordova-plugin-file-downloader",
+        "cordova-plugin-dialogs",
+        "cordova-plugin-geolocation",
+        "cordova-plugin-contacts",
+        "cordova-plugin-media",
+        "cordova-plugin-keyboard",
+        "cordova-plugin-gyroscope",
+        "cordova-plugin-sms",
+        "cordova-plugin-x-toast",
+        "cordova-plugin-in-app-purchase",
+        "cordova-plugin-file",
+        "cordova-plugin-email",
+        "cordova-plugin-googlemaps"
+    ],
+    "api": [
+        "MyService"
+    ],
+    "db": [],
+    "packages": [],
+    "icon": {
+        "background": "#000080",
+        "file": "app.png"
+    },
+    "splashscreen": {
+        "background": "#000080",
+        "color": "#FFFFFF",
+        "file": "app.png"
+    },
+    "server": {
+        "port": 3000
+    }
+}
