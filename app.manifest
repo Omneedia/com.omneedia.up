@@ -4,6 +4,9 @@
     "title": "Up!",
     "description": "Test your application in the real world",
     "platform": "mobile",
+    "context": {
+        "build": "unsafe"
+    },
     "uid": "ByOBuGZMf",
     "version": "0.0.1",
     "build": "0",
