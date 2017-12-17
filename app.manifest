@@ -79,7 +79,6 @@
         "cordova-plugin-globalization",
         "cordova-plugin-barcodescanner",
         "cordova-universal-links-plugin",
-        "cordova-plugin-socialsharing",
         "cordova-plugin-flashlight",
         "cordova-plugin-nativegeocoder",
         "cordova-plugin-document-viewer",
@@ -94,7 +93,9 @@
         "cordova-plugin-x-toast",
         "cordova-plugin-in-app-purchase",
         "cordova-plugin-file",
-        "cordova-plugin-email"
+        "cordova-plugin-email",
+        "cordova-plugin-x-socialsharing",
+        "cordova-plugin-diont"
     ],
     "api": [
         "MyService"
