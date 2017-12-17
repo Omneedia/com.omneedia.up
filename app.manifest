@@ -91,7 +91,6 @@
         "cordova-plugin-gyroscope",
         "cordova-plugin-sms",
         "cordova-plugin-x-toast",
-        "cordova-plugin-in-app-purchase",
         "cordova-plugin-file",
         "cordova-plugin-email",
         "cordova-plugin-x-socialsharing",
