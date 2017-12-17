@@ -81,7 +81,6 @@
         "cordova-universal-links-plugin",
         "cordova-plugin-socialsharing",
         "cordova-plugin-flashlight",
-        "cordova-plugin-file-transfer2",
         "cordova-plugin-nativegeocoder",
         "cordova-plugin-document-viewer",
         "cordova-plugin-file-downloader",
