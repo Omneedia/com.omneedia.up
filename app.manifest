@@ -28,7 +28,7 @@
         "fr-FR"
     ],
     "paths": {
-        "@omneedia": "http://cdn3.omneedia.com",
+        "@omneedia": "/cdn",
         "@cdnjs": "https://cdnjs.cloudflare.com/ajax/libs",
         "Contents": "Contents/Application/app",
         "Lib": "Contents/Application/app/libraries"
