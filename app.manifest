@@ -76,6 +76,7 @@
     "plugins": [
         "cordova-plugin-whitelist",
         "cordova-plugin-statusbar",
+	"cordova-plugin-file",
 	"cordova-plugin-filetransfer",
         "cordova-plugin-globalization",
         "cordova-plugin-barcodescanner",
@@ -92,7 +93,6 @@
         "cordova-plugin-gyroscope",
         "cordova-plugin-sms",
         "cordova-plugin-x-toast",
-        "cordova-plugin-file",
         "cordova-plugin-email",
         "cordova-plugin-x-socialsharing",
         "cordova-plugin-diont"
