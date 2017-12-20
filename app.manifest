@@ -76,6 +76,7 @@
     "plugins": [
         "cordova-plugin-whitelist",
         "cordova-plugin-statusbar",
+	"cordova-plugin-filetransfer",
         "cordova-plugin-globalization",
         "cordova-plugin-barcodescanner",
         "cordova-universal-links-plugin",
