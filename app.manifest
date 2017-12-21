@@ -75,6 +75,7 @@
     "modules": [],
     "plugins": [
         "cordova-plugin-whitelist",
+	"cordova-plugin-device",
         "cordova-plugin-statusbar",
 	"cordova-plugin-file",
 	"cordova-plugin-filetransfer",
