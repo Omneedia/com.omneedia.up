@@ -13,11 +13,11 @@
     "copyright": "Copyright (c) 2017 Omneedia",
     "license": "BSD3",
     "author": {
-        "name": "XXX",
-        "mail": "xxx@xxx.com",
-        "twitter": "@xxx",
+        "name": "Stéphane Zucatti",
+        "mail": "stephane.zucatti@me.com",
+        "twitter": "@mydearsz",
         "web": "",
-        "github": ""
+        "github": "https://github.com/zucatti"
     },
     "team": {
         "debugger": [],
@@ -75,10 +75,10 @@
     "modules": [],
     "plugins": [
         "cordova-plugin-whitelist",
-	"cordova-plugin-device",
+	    "cordova-plugin-device",
         "cordova-plugin-statusbar",
-	"cordova-plugin-file",
-	"cordova-plugin-filetransfer",
+	    "cordova-plugin-file",
+	    "cordova-plugin-filetransfer",
         "cordova-plugin-globalization",
         "cordova-plugin-barcodescanner",
         "cordova-universal-links-plugin",
@@ -95,8 +95,7 @@
         "cordova-plugin-sms",
         "cordova-plugin-x-toast",
         "cordova-plugin-email",
-        "cordova-plugin-x-socialsharing",
-        "cordova-plugin-diont"
+        "cordova-plugin-x-socialsharing"
     ],
     "api": [
         "MyService"
