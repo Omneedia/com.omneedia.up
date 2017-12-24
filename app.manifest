@@ -103,7 +103,8 @@
         "cordova-plugin-sms",
         "cordova-plugin-x-toast",
         "cordova-plugin-email",
-        "cordova-plugin-x-socialsharing"
+        "cordova-plugin-x-socialsharing",
+	"cordova-plugin-disable-ios11-statusbar"
     ],
     "api": [
         "MyService"
