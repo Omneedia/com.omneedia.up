@@ -28,7 +28,7 @@
         "fr-FR"
     ],
     "paths": {
-        "@omneedia": "http://cdn3.omneedia.com",
+        "@omneedia": "http://cdn.omneedia.com",
         "@cdnjs": "https://cdnjs.cloudflare.com/ajax/libs",
         "Contents": "Contents/Application/app",
         "Lib": "Contents/Application/app/libraries"
@@ -85,7 +85,7 @@
         "cordova-plugin-network-information",
         "cordova-plugin-vibration",
         "cordova-plugin-file",
-	    "cordova-plugin-filetransfer",
+	    "cordova-plugin-file-transfer",
         "cordova-plugin-globalization",
 	    "cordova-plugin-camera",
         "phonegap-plugin-barcodescanner",
