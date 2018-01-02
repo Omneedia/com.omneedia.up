@@ -85,7 +85,6 @@
         "cordova-plugin-network-information",
         "cordova-plugin-vibration",
         "cordova-plugin-file",
-	    "cordova-plugin-file-transfer",
         "cordova-plugin-globalization",
 	    "cordova-plugin-camera",
         "phonegap-plugin-barcodescanner",
