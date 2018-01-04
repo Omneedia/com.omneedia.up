@@ -21,29 +21,21 @@ App.controller.define('CMain', {
     },
     "load-click": function(event) {
 
-        function createFile() {
-            var type = window.TEMPORARY;
-            var size = 5 * 1024 * 1024;
-            window.requestFileSystem(type, size, successCallback, errorCallback)
 
-            function successCallback(fs) {
-                fs.root.getFile('log.txt', { create: true, exclusive: true }, function(fileEntry) {
-                    alert('File creation successfull!')
-                }, errorCallback);
-            }
-
-            function errorCallback(error) {
-                alert("ERROR: " + error.code)
-            }
-
-        };
-
-        createFile();
 
         App.$(".load").hide();
         cordova.plugins.barcodeScanner.scan(
             function(result) {
-                window.location.href = result.text;
+                var iframe = document.createElement('iframe');
+                iframe.src = result.text;
+                iframe.style.position = "absolute";
+                iframe.style.top = "0px";
+                iframe.style.left = "0px";
+                iframe.style.width = "100%";
+                iframe.style.height = "100%";
+                iframe.style.border = '0px solid black';
+                document.getElementsByTagName('body')[0].appendChild(iframe);
+                //window.location.href = result.text;
             },
             function(error) {
                 alert("Scanning failed: " + error);
