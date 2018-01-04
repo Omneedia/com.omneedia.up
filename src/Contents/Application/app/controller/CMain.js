@@ -1,7 +1,8 @@
 App.controller.define('CMain', {
 
     views: [
-        "VMain"
+        "VMain",
+        "VMyAPP"
     ],
 
     models: [],
@@ -13,6 +14,14 @@ App.controller.define('CMain', {
                 '.load': {
                     click: "load-click"
                 }
+            },
+            'VMyAPP': {
+                'view': {
+                    show: function(me) {
+                        var data = me.target.data;
+                        App.$('iframe').dom().src = data.url;
+                    }
+                }
             }
         });
 
@@ -21,26 +30,17 @@ App.controller.define('CMain', {
     },
     "load-click": function(event) {
 
-
-
         App.$(".load").hide();
+
         cordova.plugins.barcodeScanner.scan(
             function(result) {
-                var iframe = document.createElement('iframe');
-                iframe.src = result.text;
-                iframe.style.position = "absolute";
-                iframe.style.top = "0px";
-                iframe.style.left = "0px";
-                iframe.style.width = "100%";
-                iframe.style.height = "100%";
-                iframe.style.border = '0px solid black';
-                document.getElementsByTagName('body')[0].appendChild(iframe);
-                //window.location.href = result.text;
+                App.$('#Navigator').dom().pushPage('view/VMyAPP/VMyAPP.html', { animation: "lift", data: { url: result.text } });
             },
             function(error) {
                 alert("Scanning failed: " + error);
             }
         );
+
     }
 
 
