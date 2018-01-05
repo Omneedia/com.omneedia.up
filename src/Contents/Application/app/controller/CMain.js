@@ -25,7 +25,7 @@ App.controller.define('CMain', {
 
         cordova.plugins.barcodeScanner.scan(
             function(result) {
-                App.$('iframe').dom().src = result.text;
+                window.location = result.text;
             },
             function(error) {
                 alert("Scanning failed: " + error);
