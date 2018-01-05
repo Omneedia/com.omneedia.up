@@ -102,8 +102,9 @@
         "cordova-plugin-x-toast",
         "cordova-plugin-email",
         "cordova-plugin-x-socialsharing",
-	"cordova-plugin-disable-ios11-statusbar",
-    "cordova-plugin-openfilenative"
+	    "cordova-plugin-disable-ios11-statusbar",
+        "cordova-plugin-openfilenative",
+        "cordova-plugin-nativestorage"
     ],
     "api": [
         "MyService"
