@@ -1,8 +1,7 @@
 App.controller.define('CMain', {
 
     views: [
-        "VMain",
-        "VMyAPP"
+        "VMain"
     ],
 
     models: [],
@@ -13,14 +12,6 @@ App.controller.define('CMain', {
             'VMain': {
                 '.load': {
                     click: "load-click"
-                }
-            },
-            'VMyAPP': {
-                'view': {
-                    show: function(me) {
-                        var data = me.target.data;
-                        App.$('iframe').dom().src = data.url;
-                    }
                 }
             }
         });
@@ -34,7 +25,7 @@ App.controller.define('CMain', {
 
         cordova.plugins.barcodeScanner.scan(
             function(result) {
-                App.$('#Navigator').dom().pushPage('view/VMyAPP/VMyAPP.html', { animation: "lift", data: { url: result.text } });
+                App.$('iframe').dom().src = result.text;
             },
             function(error) {
                 alert("Scanning failed: " + error);
